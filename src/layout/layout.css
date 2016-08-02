@@ -1,0 +1,84 @@
+*, *:before, *:after
+{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+button {
+	font-size: 14pt
+}
+
+html, body, #castle-app
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+#game {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* align items in Main Axis */
+  align-items: stretch; /* align items in Cross Axis */
+  align-content: stretch; /* Extra space in Cross Axis */
+}
+
+#world {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; /* align items in Main Axis */
+  align-items: stretch; /* align items in Cross Axis */
+  align-content: stretch; /* Extra space in Cross Axis */
+  background: #e3dfd3;
+  flex: 1;
+}
+
+#control-bar {
+  padding:10px
+}
+
+/*
+#world {
+  position: fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  min-width: 100%;
+  min-height: 100%;
+}*/
+
+
+svg .placeholder {
+  opacity: 0
+
+}
+
+svg .placeholder:hover {
+	opacity: 0.8;
+}
+
+svg .placeholder.active {
+  opacity: 1
+}
+
+
+@keyframes concept-tile {
+  from {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 0.8;
+  }
+}

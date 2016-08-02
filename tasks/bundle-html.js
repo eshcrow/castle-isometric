@@ -7,7 +7,7 @@ module.exports = function (gulp) {
   })
 
   gulp.task('bundle-html:project', function () {
-    return gulp.src(['./src/index.html'])
+    return gulp.src(['./src/**/*.html'])
       .pipe(minifyHtml())
       .pipe(gulp.dest('./dist'))
   })
